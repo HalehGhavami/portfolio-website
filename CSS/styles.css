@@ -1,16 +1,15 @@
 
 :root {
-
-  --primary-color:#636363;
+  --primary-color: #636363;
   --reset-color: #e0b354;
   --active-color: #333;
   --gray-color: #808080;
-  --table-head:#c0c0c0;
-  --table-body:#e0e0e0;
-  --shadow-color:#777;
-  --font-family:'Barlow Semi Condensed', sans-serif;
-  --font-variant:small-caps;
-  --animation-color-from: #FFC74A;
+  --table-head: #c0c0c0;
+  --table-body: #e0e0e0;
+  --shadow-color: #777;
+  --font-family: 'Barlow Semi Condensed', sans-serif;
+  --font-variant: small-caps;
+  --animation-color-from: #ffc74a;
   --animation-color-mid: #fcffad;
   --animation-color-to: #f76414;
   --body-font-size: 20px;
@@ -30,20 +29,20 @@ body {
   margin: 10px;
 }
 
-.main-contact, .main-work, .main-home{
-  text-align:center;
+.main-contact,
+.main-work,
+.main-home {
+  text-align: center;
 }
 
-
-.header-container{
+.header-container {
   display: flex;
   width: 100%;
   padding: 20px;
   font-variant: var(--font-variant);
-
 }
 
-.header-container__item{
+.header-container__item {
   flex: 0 1 50px;
   display: flex;
   justify-content: center;
@@ -58,38 +57,36 @@ body {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
-
 }
 
-.header-container__logo{
+.header-container__logo {
   width: 100%;
   height: auto;
   max-width: 50px;
 }
-.navigation-list{
+
+.navigation-list {
   list-style-type: none;
   margin: 0;
 }
 
-.navigation-list__item--active{
+.navigation-list__item--active {
   text-decoration: none;
 }
 
-hr{
+hr {
   margin-top: 0;
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-
-.profile{
+.profile {
   max-width: 740px;
   margin: 0 auto;
-
-
 }
-.profile__portrait{
+
+.profile__portrait {
   float: left;
   width: 100%;
   margin-top: 100px;
@@ -101,17 +98,18 @@ hr{
   text-align: center;
 }
 
-h1, h2{
+h1,
+h2 {
   font-variant: var(--font-variant);
   font-weight: var(--body-font-weight);
 }
 
-div.cv-button{
+div.cv-button {
   display: block;
   text-align: center;
 }
 
-span{
+span {
   color: var(--reset-color);
 }
 
@@ -119,17 +117,15 @@ span{
   text-decoration: none;
 }
 
-.credit{
+.credit {
   text-decoration: none;
   font-size: 12px;
   display: block;
 }
 
-.main-about li{
+.main-about li {
   list-style-type: none;
 }
-
-
 
 .footer {
   clear: both;
@@ -139,7 +135,7 @@ span{
   font-variant: var(--font-variant);
 }
 
-.social-media img{
+.social-media img {
   display: inline-block;
   margin-left: 15px;
   width: 100%;
@@ -147,12 +143,12 @@ span{
   max-width: 30px;
 }
 
-.social-media__icon{
+.social-media__icon {
   text-decoration: none;
 }
 
 a {
-  color:  var(--primary-color);
+  color: var(--primary-color);
 }
 
 a:active {
@@ -160,12 +156,12 @@ a:active {
   text-decoration: none;
 }
 
-a:hover a:focus{
+a:hover a:focus {
   cursor: pointer;
-
 }
 
-button, .button {
+button,
+.button {
   display: inline-block;
   border: none;
   background-color: var(--active-color);
@@ -175,11 +171,23 @@ button, .button {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   text-decoration: none;
   transition: 0.2s opacity;
-
 }
 
-button:hover , button:focus, .button:hover,
-.button:focus{
+button {
+  border: 1px solid var(--active-color);
+  margin: auto;
+  width: 90px;
+  border-radius: 6px;
+}
+
+button[type="submit"] {
+  border: 1px solid var(--reset-color);
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer;
   opacity: 0.8;
 }
@@ -189,57 +197,43 @@ button:hover , button:focus, .button:hover,
   color: var(--active-color);
 }
 
-thead{
+thead {
   background-color: var(--table-head);
 }
 
-tbody{
+tbody {
   background-color: var(--table-body);
 }
 
-td{
+td {
   text-align: center;
 }
 
 form {
   color: var(--primary-color);
-
 }
 
 form.standard-label {
-  display:flex;
-
+  display: flex;
 }
 
 label.standard-label {
-  display:block;
+  display: block;
   padding-bottom: 5px;
   font-size: 16px;
 }
 
-input, textarea {
+input,
+textarea {
   border: 1px solid var(--active-color);
   margin: auto;
   padding: 0;
   width: 200px;
-  background-color:var(--table-body);
+  background-color: var(--table-body);
   border-radius: 3px;
 }
 
-
-button {
-  border: 1px solid var(--active-color);
-  margin: auto;
-  padding: 0;
-  width: 90px;
-  border-radius: 6px;
-}
-
-button[type="submit"]{
-  border: 1px solid var(--reset-color);
-}
-
-table{
+table {
   position: relative;
   margin: auto;
 }
@@ -249,6 +243,7 @@ table{
   display: inline-block;
   width: 33%;
 }
+
 /* end grid fallback */
 
 @supports (display: grid) {
@@ -261,7 +256,6 @@ table{
 
   .grid__item {
     background-color: var(--table-head);
-    width: auto;
     min-height: auto;
     margin: 0;
     padding: 10px;
@@ -272,59 +266,61 @@ table{
     grid-row: 2 / 3;
   }
 
-  .grid__item h2{
+  .grid__item h2 {
     font-variant: none;
   }
-
 }
-
-
 
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
-
 }
 
 @keyframes color-change {
   0% {
     fill: var(--animation-color-from);
   }
+
   50% {
-    fill:var(--animation-color-mid);
+    fill: var(--animation-color-mid);
   }
+
   100% {
     fill: var(--animation-color-to);
   }
-
 }
-.sun{
+
+.sun {
   animation: 4s color-change infinite alternate linear;
 }
-
 
 @keyframes cloud-move {
   from {
     transform: translate(-7em, 50px);
   }
+
   to {
     transform: translate(80px, -1em);
   }
@@ -334,12 +330,11 @@ table{
   from {
     transform: translate(-5em, 80px);
   }
+
   to {
     transform: translate(100px, 50px);
   }
-
 }
-
 
 .cloud-back {
   animation: 10s cloud-move infinite alternate linear;
@@ -350,14 +345,15 @@ table{
 }
 
 @keyframes hello {
-  0%{
+  0% {
     filter: hue-rotate(0);
   }
-  100%{
+
+  100% {
     filter: hue-rotate(-360deg);
   }
 }
-.hello{
-  animation: hello 6s linear infinite;
 
+.hello {
+  animation: hello 6s linear infinite;
 }
