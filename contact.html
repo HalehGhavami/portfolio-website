@@ -74,7 +74,7 @@
       <br />
       <h2>ask more About me</h2>
       <div>
-        <form action="/somewhere_else" method="post">
+        <form onsubmit="return alert('Successfully Submitted!')" method="post">
           <label for="yourname" class="standard-label"></label>
           <input
             type="text"
@@ -97,9 +97,10 @@
           <label for="telefone" class="standard-label"></label>
           <input
             type="tel"
-            name="telefone"
-            id="telefone"
-            placeholder="Telephone"
+            name="telephone"
+            id="telephone"
+            placeholder="0123456789"
+            pattern="[0-9]{8}|[0-9]{10}"
           />
           <br />
           <br />
