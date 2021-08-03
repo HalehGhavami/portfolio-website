@@ -13,7 +13,7 @@
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 2;
   display: block;
   margin: 10px;
@@ -21,7 +21,8 @@ body {
 
 .main-contact,
 .main-work,
-.main-home {
+.main-home,
+.main-about {
   text-align: center;
 }
 
@@ -110,11 +111,8 @@ hr {
 }
 
 .profile__portrait {
-  float: left;
   width: 100%;
-  margin-top: 100px;
   max-width: 250px;
-  margin-right: 40px;
   border-radius: 50%;
   border: 1px solid #e0b354;
   -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -181,7 +179,7 @@ span {
 }
 
 a {
-  color: #636363;
+  color: #4f4f4f;
 }
 
 a:active {
@@ -197,7 +195,7 @@ a:hover a:focus {
   display: inline-block;
   border: none;
   background-color: #333;
-  color: #808080;
+  color: #9b9b9b;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
