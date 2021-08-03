@@ -136,7 +136,7 @@ div.cv-button {
 }
 
 span {
-  color: #e0b354;
+  color: #ba8e00;
 }
 
 .profile__link {
@@ -194,15 +194,14 @@ a:hover a:focus {
 .button {
   display: inline-block;
   border: none;
-  background-color: #333;
-  color: #9b9b9b;
+  background-color: #c0c0c0;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   text-decoration: none;
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
+  box-shadow: 5px 5px 20px rgb(197 195 195);
 }
 
 button {
@@ -284,7 +283,6 @@ table {
 /* start grid fallback */
 .grid__item {
   display: inline-block;
-  width: 33%;
 }
 
 /* end grid fallback */
@@ -301,10 +299,10 @@ table {
 
   .grid__item {
     background-color: #c0c0c0;
-    width: auto;
     min-height: auto;
-    margin: 0;
+    margin: 10px;
     padding: 10px;
+    box-shadow: 5px 5px 20px rgb(197 195 195);
   }
 
   /* .grid__item:last-child {
