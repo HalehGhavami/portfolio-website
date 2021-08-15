@@ -1,6 +1,5 @@
 :root {
   --primary-color: #636363;
-  --reset-color: #e0b354;
   --active-color: #333;
   --gray-color: #808080;
   --table-head: #c0c0c0;
@@ -39,6 +38,7 @@ body {
   width: 100%;
   padding: 20px;
   font-variant: var(--font-variant);
+  font-size: 1.5em;
 }
 
 .header-container__item {

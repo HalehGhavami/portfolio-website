@@ -33,6 +33,7 @@ body {
   width: 100%;
   padding: 20px;
   font-variant: small-caps;
+  font-size: 1.5em;
 }
 
 .header-container__item {
@@ -76,7 +77,12 @@ body {
 }
 
 .navigation-list__item--active {
-  text-decoration: none;
+  font-weight: lighter;
+}
+
+.navigation-list__item:hover {
+  color: #007484;
+  font-weight: 800;
 }
 
 hr {
@@ -114,7 +120,7 @@ hr {
   width: 100%;
   max-width: 250px;
   border-radius: 50%;
-  border: 1px solid #e0b354;
+  border: 1px solid #007484;
   -webkit-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
   text-align: center;
@@ -136,7 +142,33 @@ div.cv-button {
 }
 
 span {
-  color: #ba8e00;
+  color: #007484;
+
+  font-weight: 800;
+}
+
+span:hover {
+  font-weight: normal;
+}
+
+.skills {
+  color: #f1f4f5;
+  font-weight: 800;
+}
+
+.skills:hover {
+  font-weight: normal;
+  color: #007484;
+}
+
+.project-title {
+  color: #007484;
+
+  font-weight: 800;
+}
+
+.project-title:hover {
+  font-weight: normal;
 }
 
 .profile__link {
@@ -179,11 +211,11 @@ span {
 
 a {
   color: #4f4f4f;
+  text-decoration: none;
 }
 
 a:active {
   color: #333;
-  text-decoration: none;
 }
 
 a:hover a:focus {
@@ -193,7 +225,7 @@ a:hover a:focus {
 .button {
   display: inline-block;
   border: none;
-  background-color: #c0c0c0;
+  background-color: #007484;
   padding: 10px;
   border-radius: 3px;
   text-decoration: none;
@@ -201,6 +233,8 @@ a:hover a:focus {
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
   box-shadow: 5px 5px 20px rgb(197 195 195);
+  font-size: 1.5em;
+  color: #f1f4f5;
 }
 
 button {
@@ -211,21 +245,12 @@ button {
   border-radius: 6px;
 }
 
-button[type='submit'] {
-  border: 1px solid #e0b354;
-}
-
 button:hover,
 button:focus,
 .button:hover,
 .button:focus {
   cursor: pointer;
   opacity: 0.8;
-}
-
-.button__reset {
-  background-color: #e0b354;
-  color: #333;
 }
 
 thead {
