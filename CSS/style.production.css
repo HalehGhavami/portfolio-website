@@ -26,6 +26,10 @@ body {
   text-align: center;
 }
 
+.main-contact a:hover {
+  color: #007484;
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,6 +120,11 @@ hr {
   margin: 0 auto;
 }
 
+.profile:hover {
+  transition: 0.4s;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .profile__portrait {
   width: 100%;
   max-width: 250px;
@@ -129,6 +138,7 @@ hr {
 h1 {
   font-variant: small-caps;
   font-weight: 400;
+  color: #000 !important;
 }
 
 h2 {
@@ -147,28 +157,15 @@ span {
   font-weight: 800;
 }
 
-span:hover {
-  font-weight: normal;
-}
-
 .skills {
-  color: #f1f4f5;
-  font-weight: 800;
-}
-
-.skills:hover {
-  font-weight: normal;
   color: #007484;
+  font-weight: 800;
 }
 
 .project-title {
   color: #007484;
 
   font-weight: 800;
-}
-
-.project-title:hover {
-  font-weight: normal;
 }
 
 .profile__link {
