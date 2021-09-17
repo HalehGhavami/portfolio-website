@@ -1,243 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Works of Haleh Ghavami</title>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Works of Haleh Ghavami</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon shortcut" href="img/favicon.ico" type="image/x-icon" />
 
-  <link rel="icon shortcut" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
 
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.production.css" />
+  </head>
 
-  <link rel="stylesheet" type="text/css" href="CSS/style.production.css" />
-</head>
-
-<body>
-  <header class="header-container">
-    <div class="header-container__item">
-      <a href="index.html">
-        <img class="header-container__logo" src="img/avatar.png" alt="tesla logo" />
-      </a>
-    </div>
-    <nav class="header-container__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">my Projects</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact me</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <hr />
-  <main class="main-work">
-    <section>
-      <h1 id="myprojects">my Projects</h1>
-      <div class="grid">
-        <div class="grid__item">
-          <h2 class="project-title">Portfolio Website</h2>
-          <p>
-            This entire website (the one you're reading right now) was built
-            using vanilla HTML, CSS, and Javascript. No fancy libraries. No
-            frameworks or toolsets. Just good, old-fashioned coding.
-          </p>
-          <h3 >Technical skills:</h3>
-          <p class="skills">
-            HTML<br />
-            CSS<br />
-            Javascript<br />
-            Web Design<br />
-          </p>
-          <a href="https://halehghavami.github.io/portfolio-website/" target="_blank">
-            See how it works</a>
-          <br>
-          <a href="https://github.com/HalehGhavami/portfolio-website" target="_blank">
-            See the code on Github
-
-            <img src="img/portfolio-website.png" width="100%" height="auto" alt="preview of portfolio website" />
-            <br />
-          </a>
-        </div>
-
-        <div class="grid__item">
-          <h2 class="project-title">Basic Pokedex App</h2>
-          <p>
-            This is a basic pokedex app that pulls from the Pokemon API to
-            generate a list of pokemon. Written using Javascript and
-            Bootstrap. It was designed for use on a mobile device.
-          </p>
-          <h3>Technical Skills</h3>
-          <p class="skills">
-            Javascript<br />
-            API interfacing<br />
-            AJAX commands<br />
-            Bootstrap<br />
-          </p>
-          <a href="https://halehghavami.github.io/Pokedex/" target="_blank">
-            See how it works</a>
-          <a href="https://github.com/HalehGhavami/Pokedex" target="_blank">
-            <br />
-            See the code on Github
-            <img src="img/pokedex-screenshot.png" width="100%" height="auto" alt="preview of pokedex app"/><br>
-          </a>
-        </div>
-
-
-        <div class="grid__item">
-          <h2 class="project-title">movie API</h2>
-          <p>
-            This project involved building a server and business logic for an
-            API for an IMBD-like website. It was used as the backend for
-            myFlix React and Angular Client projects. 
-          </p>
-          <h3>Technical Skills</h3>
-          <p class="skills">
-            Node.js<br />
-            mongoDB<br />
-            Heroku App hosting<br />
-            Login with hashed password storage<br />
-            JWT authentication<br />
-            Express
-          </p>
-          <a href="https://github.com/HalehGhavami/movie_API" target="_blank">
-            See the code on Github
-          <img src="img/mongoDB.png" width="100%" height="auto" alt="preview of database" />
-          <br />
-          </a>
-        </div>
-
-
-
-        <div class="grid__item">
-          <h2 class="project-title">myFlix: React Client</h2>
-          <p>
-            This project is a frontend client for use with my movie API,
-            built using React. It allows users to register an account, see the
-            movies in the database as well as information about them, and add
-            them to their list of favorites.
-          </p>
-          <h3>Technical Skills</h3>
-          <p class="skills">
-            React<br />
-            Bootstrap<br />
-            Redux<br />
-            axios<br />
-            API integration
-          </p>
-
-          <a href=https://myflix-haleh.netlify.app/" target="_blank">
-            See how it works</a>
-          <a href="https://github.com/HalehGhavami/myFlix-client" target="_blank">
-            <br />
-            See the code on Github
-         
-          <img src="img/myFlix.png" width="100%" height="auto" alt="preview of myFlix app"/><br>
-           </a>
-        </div>
-
-        <div class="grid__item">
-          <h2 class="project-title">myFlix: Angular Client</h2>
-          <p>
-             This project is a frontend client for use with my movie API,
-          built using Angular. It allows users to register an account,
-          see database movie information, and favorite those movies.
-          </p>
-          <h3>Technical Skills</h3>
-          <p class="skills">
-            Angular<br>
-          Material Design<br>
-          API integration
-          </p>
-          <a href="https://trello.com/b/eqARRz66/angular-app-myflix" target="_blank">Kanban board<br><br></a>
-          <a href="https://halehghavami.github.io/myFlix-Angular-client" target="_blank">
-            See how it works</a>
-          <a href="https://github.com/HalehGhavami/myFlix-Angular-client" target="_blank">
-            <br />
-            See the code on Github
-         
-          <img src="img/myFlixAngular.jpg" width="100%" height="auto" alt="preview of myFlix angular app"/><br>
-           </a>
-        </div>
-
-
-        <div class="grid__item">
-          <h2 class="project-title">Meet Progressive Web App</h2>
-          <p>
-            This is a Progressive Web App (PWA) that uses Google OAuth2 and
-            Amazon Lambda functions to pull events from a Google Calendar. It
-            is responsive and can function through cached data while offline.
-          </p>
-          <h3>Technical Skills</h3>
-          <p class="skills">
-            React<br />
-            Recharts for dynamic data visualization<br />
-            Google OAuth2 for login<br />
-            Amazon Lambda functions for hosting<br />
-            Enzyme for code testing
-          </p>
-
-          <a href="https://halehghavami.github.io/meet-app/" target="_blank">
-            See how it works</a>
-          <a href="https://github.com/HalehGhavami/meet-app" target="_blank">
-            <br />
-            See the code on Github
-          <img src="img/meet-app-screenshot.png" width="100%" height="auto" alt="preview of meet app"/><br />
-          </a>
-        </div>
-
-
-        <div class="grid__item">
-          <h2 class="project-title">Chat Mat: React Native App</h2>
-          <p>
-            This project is a native mobile app for chatting on 
-          Android or iOS devices. It allows users to chat with
-          others in a shared chatroom.
-          </p>
-          <h3>Technical Skills</h3>
-          <p class="skills">
-          React-Native<br>
-          Google Firebase<br>
-          Expo Android development<br>
-          Native Mobile App development
-          </p>
-         
-          <a href="https://github.com/HalehGhavami/chat-mat" target="_blank">
-            <br />
-            See the code on Github
-          <img src="img/chatmat.png" width="100%" height="auto" alt="preview of chat mat app"/><br />
-          </a>
-        </div>
-
- 
-
+  <body>
+    <header class="header-container">
+      <div class="header-container__item">
+        <a href="index.html">
+          <img
+            class="header-container__logo"
+            src="img/avatar.png"
+            alt="tesla logo"
+          />
+        </a>
       </div>
-    </section>
-  </main>
-  <br />
-  <footer class="footer">
-    <p class="footer-paragraph">Find me on</p>
-    <div class="social-media">
-      <a class="social-media__icon" href="https://www.linkedin.com/in/halehghavami/" target="_blank">
-        <img src="img/iconfinder_square-linkedin_317725.svg" alt="linkedin logo" />
-      </a>
-      <a class="social-media__icon" href="https://github.com/HalehGhavami" target="_blank">
-        <img src="img/iconfinder_github_291716.svg" alt="GitHub logo" />
-      </a>
-    </div>
-  </footer>
+      <nav class="header-container__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >my Projects</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact me</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main class="main-work">
+      <section>
+        <h1 id="myprojects">my Projects</h1>
+        <div class="grid">
+          <div class="grid__item">
+            <h2 class="project-title">Portfolio Website</h2>
+            <p>
+              This entire website (the one you're reading right now) was built
+              using vanilla HTML, CSS, and Javascript. No fancy libraries. No
+              frameworks or toolsets. Just good, old-fashioned coding.
+            </p>
+            <h3>Technical skills:</h3>
+            <p class="skills">
+              HTML<br />
+              CSS<br />
+              Javascript<br />
+              Web Design<br />
+            </p>
+            <a
+              href="https://halehghavami.github.io/portfolio-website/"
+              target="_blank"
+            >
+              See how it works</a
+            >
+            <br />
+            <a
+              href="https://github.com/HalehGhavami/portfolio-website"
+              target="_blank"
+            >
+              See the code on Github
 
-  <script src="js/tota11y.min.js"></script>
-</body>
+              <img
+                src="img/portfolio-website.png"
+                width="100%"
+                height="auto"
+                alt="preview of portfolio website"
+              />
+              <br />
+            </a>
+          </div>
 
+          <div class="grid__item">
+            <h2 class="project-title">Basic Pokedex App</h2>
+            <p>
+              This is a basic pokedex app that pulls from the Pokemon API to
+              generate a list of pokemon. Written using Javascript and
+              Bootstrap. It was designed for use on a mobile device.
+            </p>
+            <h3>Technical Skills</h3>
+            <p class="skills">
+              Javascript<br />
+              API interfacing<br />
+              AJAX commands<br />
+              Bootstrap<br />
+            </p>
+            <a href="https://halehghavami.github.io/Pokedex/" target="_blank">
+              See how it works</a
+            >
+            <a href="https://github.com/HalehGhavami/Pokedex" target="_blank">
+              <br />
+              See the code on Github
+              <img
+                src="img/pokedex-screenshot.png"
+                width="100%"
+                height="auto"
+                alt="preview of pokedex app"
+              /><br />
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <h2 class="project-title">movie API</h2>
+            <p>
+              This project involved building a server and business logic for an
+              API for an IMBD-like website. It was used as the backend for
+              myFlix React and Angular Client projects.
+            </p>
+            <h3>Technical Skills</h3>
+            <p class="skills">
+              Node.js<br />
+              mongoDB<br />
+              Heroku App hosting<br />
+              Login with hashed password storage<br />
+              JWT authentication<br />
+              Express
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1dZWm4bv25fpRG91svU9VVYMl6lDAh2-T/view?usp=sharing"
+              target="_blank"
+            >
+              Case Study</a
+            >
+            <br />
+            <a href="https://github.com/HalehGhavami/movie_API" target="_blank">
+              See the code on Github
+              <img
+                src="img/mongoDB.png"
+                width="100%"
+                height="auto"
+                alt="preview of database"
+              />
+              <br />
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <h2 class="project-title">myFlix: React Client</h2>
+            <p>
+              This project is a frontend client for use with my movie API, built
+              using React. It allows users to register an account, see the
+              movies in the database as well as information about them, and add
+              them to their list of favorites.
+            </p>
+            <h3>Technical Skills</h3>
+            <p class="skills">
+              React<br />
+              Bootstrap<br />
+              Redux<br />
+              axios<br />
+              API integration
+            </p>
+
+            <a href="https://myflix-haleh.netlify.app/" target="_blank">
+              See how it works</a
+            >
+            <a
+              href="https://github.com/HalehGhavami/myFlix-client"
+              target="_blank"
+            >
+              <br />
+              See the code on Github
+
+              <img
+                src="img/myFlix.png"
+                width="100%"
+                height="auto"
+                alt="preview of myFlix app"
+              /><br />
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <h2 class="project-title">myFlix: Angular Client</h2>
+            <p>
+              This project is a frontend client for use with my movie API, built
+              using Angular. It allows users to register an account, see
+              database movie information, and favorite those movies.
+            </p>
+            <h3>Technical Skills</h3>
+            <p class="skills">
+              Angular<br />
+              Material Design<br />
+              API integration
+            </p>
+            <a
+              href="https://trello.com/b/eqARRz66/angular-app-myflix"
+              target="_blank"
+              >Kanban board<br /><br
+            /></a>
+            <a
+              href="https://halehghavami.github.io/myFlix-Angular-client"
+              target="_blank"
+            >
+              See how it works</a
+            >
+            <a
+              href="https://github.com/HalehGhavami/myFlix-Angular-client"
+              target="_blank"
+            >
+              <br />
+              See the code on Github
+
+              <img
+                src="img/myFlixAngular.jpg"
+                width="100%"
+                height="auto"
+                alt="preview of myFlix angular app"
+              /><br />
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <h2 class="project-title">Meet Progressive Web App</h2>
+            <p>
+              This is a Progressive Web App (PWA) that uses Google OAuth2 and
+              Amazon Lambda functions to pull events from a Google Calendar. It
+              is responsive and can function through cached data while offline.
+            </p>
+            <h3>Technical Skills</h3>
+            <p class="skills">
+              React<br />
+              Recharts for dynamic data visualization<br />
+              Google OAuth2 for login<br />
+              Amazon Lambda functions for hosting<br />
+              Enzyme for code testing
+            </p>
+
+            <a href="https://halehghavami.github.io/meet-app/" target="_blank">
+              See how it works</a
+            >
+            <a href="https://github.com/HalehGhavami/meet-app" target="_blank">
+              <br />
+              See the code on Github
+              <img
+                src="img/meet-app-screenshot.png"
+                width="100%"
+                height="auto"
+                alt="preview of meet app"
+              /><br />
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <h2 class="project-title">Chat Mat: React Native App</h2>
+            <p>
+              This project is a native mobile app for chatting on Android or iOS
+              devices. It allows users to chat with others in a shared chatroom.
+            </p>
+            <h3>Technical Skills</h3>
+            <p class="skills">
+              React-Native<br />
+              Google Firebase<br />
+              Expo Android development<br />
+              Native Mobile App development
+            </p>
+
+            <a href="https://github.com/HalehGhavami/chat-mat" target="_blank">
+              <br />
+              See the code on Github
+              <img
+                src="img/chatmat.png"
+                width="100%"
+                height="auto"
+                alt="preview of chat mat app"
+              /><br />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br />
+    <footer class="footer">
+      <p class="footer-paragraph">Find me on</p>
+      <div class="social-media">
+        <a
+          class="social-media__icon"
+          href="https://www.linkedin.com/in/halehghavami/"
+          target="_blank"
+        >
+          <img
+            src="img/iconfinder_square-linkedin_317725.svg"
+            alt="linkedin logo"
+          />
+        </a>
+        <a
+          class="social-media__icon"
+          href="https://github.com/HalehGhavami"
+          target="_blank"
+        >
+          <img src="img/iconfinder_github_291716.svg" alt="GitHub logo" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
